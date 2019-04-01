@@ -26,4 +26,5 @@ BUILD_FINGERPRINT := "Xiaomi/perseus/perseus:9/PKQ1.180729.001/9.3.28:user/relea
 #   PRIVATE_BUILD_DESC="dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys" \  #  PRODUCT_NAME="dipper" \
 # TARGET_DEVICE="dipper"
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+#TODO What is this 
+#PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
