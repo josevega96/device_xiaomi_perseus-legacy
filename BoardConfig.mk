@@ -11,6 +11,10 @@
 DEVICE_PATH := device/xiaomi/perseus
 
 
+#System as root
+
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := perseus
 
@@ -42,6 +46,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/perseus/BoardConfigVendor.mk
+
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
