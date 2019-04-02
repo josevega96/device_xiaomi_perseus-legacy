@@ -72,6 +72,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
     $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
 
+# Treble
+BOARD_VNDK_RUNTIME_DISABLE := false
+
 # PocketMode
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
