@@ -7,20 +7,20 @@
 #TODO what is this?
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p_mr1.mk)
 
-#TODO: get perseus-vendor.mk
-# Get non-open-source specific aspects
-#$(call inherit-product-if-exists, vendor/xiaomi/perseus/perseus-vendor.mk)
+
+Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/xiaomi/perseus/perseus-vendor.mk)
 
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-#TODO add overlays 
+
 # Overlays
-#DEVICE_PACKAGE_OVERLAYS += \
-#   $(LOCAL_PATH)/overlay \
-#   $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += \
+   $(LOCAL_PATH)/overlay \
+   $(LOCAL_PATH)/overlay-lineage
 
 
 # Properties
@@ -34,12 +34,12 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sdm845-common
 $(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
 
-#TODO SEarch for this
+
 # Device fstab
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-#TODO Search for this
+
 # Device init scripts
 PRODUCT_PACKAGES += \
     init.target.rc
