@@ -36,9 +36,9 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
-#TODO add fstab
+
 # Recovery
-#TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/perseus/BoardConfigVendor.mk
