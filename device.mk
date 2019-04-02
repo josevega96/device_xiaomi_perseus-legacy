@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-#TODO what is this?
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p_mr1.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 
 Get non-open-source specific aspects
