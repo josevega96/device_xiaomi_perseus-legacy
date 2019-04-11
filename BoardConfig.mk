@@ -24,7 +24,7 @@ TARGET_FACE_UNLOCK_CAMERA_ID := 5
 
 
 # Kernel
-TARGET_KERNEL_CONFIG := perseus_user_defconfig
+TARGET_KERNEL_CONFIG := perseus_defconfig
 
 
 # HIDL
@@ -42,11 +42,16 @@ TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
 
 # Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# Treble
+BOARD_VNDK_RUNTIME_DISABLE := false
+
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/perseus/BoardConfigVendor.mk
-
 
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
