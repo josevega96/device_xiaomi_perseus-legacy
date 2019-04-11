@@ -26,6 +26,25 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    system \
+    vbmeta
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
+PRODUCT_PACKAGES += \
+    otapreopt_script
+
+
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -74,6 +93,17 @@ PRODUCT_COPY_FILES += \
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := false
+
+# Update engine
+PRODUCT_PACKAGES += \
+    brillo_update_payload \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # PocketMode
 PRODUCT_PACKAGES += \
