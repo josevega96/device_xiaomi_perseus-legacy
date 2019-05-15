@@ -25,9 +25,8 @@ TARGET_FACE_UNLOCK_CAMERA_ID := 5
 
 # Kernel
 TARGET_KERNEL_CONFIG := perseus_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
 # NFC
 TARGET_USES_NQ_NFC := true
