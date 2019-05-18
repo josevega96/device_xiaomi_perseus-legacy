@@ -31,7 +31,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sdm845-common
 $(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
 
-
 # Device fstab
 PRODUCT_PACKAGES += \
     fstab.qcom
@@ -44,6 +43,10 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
+	
+# Google Camera
+PRODUCT_PACKAGES += \
+    GoogleCamera
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -75,5 +78,4 @@ BOARD_VNDK_RUNTIME_DISABLE := false
 # PocketMode
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
-
 

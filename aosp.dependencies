@@ -1,0 +1,8 @@
+[
+  {
+    "remote":      "gitlab",
+    "repository":  "JoseVega/googlecam",
+    "target_path": "packages/apps/GoogleCamera",
+    "branch":      "master"
+  }
+]
