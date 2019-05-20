@@ -78,4 +78,8 @@ BOARD_VNDK_RUNTIME_DISABLE := false
 # PocketMode
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
+	
+# Wallpapers
+PRODUCT_PACKAGES += \
+    WallpapersBReel2018
 
