@@ -13,6 +13,11 @@ DEVICE_PATH := device/xiaomi/perseus
 TARGET_OTA_ASSERT_DEVICE := perseus
 
 
+# Display
+TARGET_HAS_HDR_DISPLAY := true
+TARGET_USES_COLOR_METADATA := true
+TARGET_USES_DRM_PP := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := perseus_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/perseus
