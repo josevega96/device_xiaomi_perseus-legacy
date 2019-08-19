@@ -1,5 +1,11 @@
 [
   {
+    "remote":      "github",
+    "repository":  "XENT-Project/android_kernel_xiaomi_perseus",
+    "target_path": "kernel/xiaomi/perseus",
+    "branch":      "xent-msm4.9"
+  },
+  {
     "repository": "android_device_xiaomi_sdm845-common",
     "target_path": "device/xiaomi/sdm845-common"
   }
