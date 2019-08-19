@@ -81,8 +81,3 @@ service lhd /vendor/bin/lhd /vendor/etc/lhd.conf
     user gps
     group system inet net_raw sdcard_rw wakelock
     ioprio rt 0
-
-service remosaic_daemon /vendor/bin/remosaic_daemon
-    class late_start
-    user camera
-    group camera

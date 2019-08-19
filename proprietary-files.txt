@@ -18,12 +18,10 @@ vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
 vendor/lib/rfsa/adsp/misound_res.bin
 
 # Audio (speaker amplifier) firmware
-vendor/firmware/tas2557_uCDSP_aac.bin
-vendor/firmware/tas2557_uCDSP_goer.bin
+vendor/firmware/tas2557_uCDSP.bin
 
 # Audio (speaker amplifier) calibration
-vendor/etc/tas2557_aac.ftcfg
-vendor/etc/tas2557_goer.ftcfg
+vendor/etc/tas2557.ftcfg
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -32,7 +30,6 @@ vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 
 # Camera
-vendor/bin/remosaic_daemon
 vendor/etc/camera/MIUI_Time.ttf
 vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/age_gender_bg
@@ -62,7 +59,6 @@ vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_supernight.so
 vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so
 vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
-vendor/lib64/libbinder.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxfdalgov7.so
 vendor/lib64/libcamxstatscore.so
@@ -71,19 +67,15 @@ vendor/lib64/libmibokeh_845.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libremosaic_daemon.so
-vendor/lib64/libremosaiclib.so
 vendor/lib64/libSuperSensor.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib/camera/components/com.qti.eisv2.so
-vendor/lib/camera/components/com.qti.stats.asd.so
-vendor/lib/camera/components/com.qti.node.remosaic.so
+vendor/lib/camera/components/com.qti.stats.aec.so
 vendor/lib/camera/components/com.qti.node.sr.so
 vendor/lib/camera/components/com.arcsoft.node.hdr.so
 vendor/lib/camera/components/com.qti.stats.af.so
 vendor/lib/camera/components/com.mi.node.aiadd.so
 vendor/lib/camera/components/com.qti.stats.pdlib.so
-vendor/lib/camera/components/com.qti.node.dummysat.so
-vendor/lib/camera/components/com.qti.node.dummyrtb.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.qti.stats.afd.so
 vendor/lib/camera/components/com.qti.node.eisv3.so
@@ -98,8 +90,6 @@ vendor/lib/camera/components/com.qti.stats.awbwrapper.so
 vendor/lib/camera/components/com.qti.stats.awb.so
 vendor/lib/camera/components/com.qti.stats.aecwrapper.so
 vendor/lib/camera/components/com.arcsoft.node.skinbeautifier.so
-vendor/lib/camera/components/com.xiaomi.node.mibokeh.so
-vendor/lib/camera/components/com.morpho.node.videorefiner.so
 vendor/lib/camera/components/com.qti.eisv3.so
 vendor/lib/camera/components/com.arcsoft.node.smoothtransition.so
 vendor/lib/camera/components/com.qti.node.photosolid.so
@@ -117,29 +107,28 @@ vendor/lib/camera/components/etc/model_front.dlc
 vendor/lib/camera/components/etc/GpuKernelRepo.pb
 vendor/lib/camera/components/etc/model_back.dlc
 vendor/lib/camera/components/com.qti.hvx.binning.so
-vendor/lib/camera/components/com.qti.node.watermark.so
 vendor/lib/camera/components/com.qti.node.xiaomigenderage.so
 vendor/lib/camera/com.qti.tuned.default.bin
 vendor/lib/camera/com.qti.tuned.liteon_imx363.bin
 vendor/lib/camera/com.qti.tuned.liteon_s5k3m3.bin
-vendor/lib/camera/com.qti.tuned.qtech_s5k3t1.bin
 vendor/lib/camera/com.qti.tuned.semco_imx363.bin
 vendor/lib/camera/com.qti.tuned.semco_s5k3m3.bin
 vendor/lib/camera/com.qti.tuned.sunny_s5k3t1.bin
 vendor/lib/camera/com.qti.tuned.sunny_ov7251.bin
+vendor/lib/camera/com.qti.tuned.sunny_ov02a10.bin
 vendor/lib/camera/com.qti.sensor.imx363.so
-vendor/lib/camera/com.qti.sensor.ov7251.so
+vendor/lib/camera/com.qti.sensor.ov02a10.so
 vendor/lib/camera/com.qti.sensor.s5k3m3.so
-vendor/lib/camera/com.qti.sensor.s5k3t1.so
-vendor/lib/camera/com.qti.sensormodule.imx333.bin
-vendor/lib/camera/com.qti.sensormodule.imx363.bin
-vendor/lib/camera/com.qti.sensormodule.liteon_imx333.bin
-vendor/lib/camera/com.qti.sensormodule.liteon_imx363.bin
-vendor/lib/camera/com.qti.sensormodule.liteon_s5k3m3sn03.bin
-vendor/lib/camera/com.qti.sensormodule.ov7251.bin
-vendor/lib/camera/com.qti.sensormodule.s5k3m3sn03.bin
-vendor/lib/camera/com.qti.sensormodule.s5k3t1.bin
-vendor/lib/camera/com.qti.sensormodule.s5k3t1_qtech.bin
+vendor/lib/camera/com.qti.sensor.imx576.so
+vendor/lib/camera/com.qti.sensormodule.imx576.bin
+vendor/lib/camera/com.qti.sensormodule.perseus_imx363.bin
+vendor/lib/camera/com.qti.sensormodule.perseus_imx363_st.bin
+vendor/lib/camera/com.qti.sensormodule.ov02a10.bin
+vendor/lib/camera/com.qti.sensormodule.perseus_liteon_imx363.bin
+vendor/lib/camera/com.qti.sensormodule.com.qti.sensormodule.perseus_liteon_imx363_qt.bin
+vendor/lib/camera/com.qti.sensormodule.perseus_liteon_s5k3m3sn03.bin
+vendor/lib/camera/com.qti.sensormodule.ov02a10.bin
+vendor/lib/camera/com.qti.sensormodule.perseus_s5k3m3sn03.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigvideolite.bin
@@ -154,12 +143,11 @@ vendor/lib/libarcsoft_dualcam_refocus_rear_t.so
 vendor/lib/libarcsoft_dualcam_refocus_rear_w.so
 vendor/lib/libarcsoft_dualcam_optical_zoom_control.so
 vendor/lib/libarcsoft_dualcam_video_optical_zoom.so
-vendor/lib/libarcsoft_high_dynamic_range.so
+vendor/lib/libarcsoft_hdr.so
 vendor/lib/libarcsoft_low_light_hdr.so
 vendor/lib/libarcsoft_portrait_lighting_c.so
 vendor/lib/libarcsoft_portrait_lighting.so
 vendor/lib/libarcsoft_supernight.so
-vendor/lib/libbinder.so
 vendor/lib/libcamera_dirty.so
 vendor/lib/libcamera_scene.so
 vendor/lib/libcamxfdalgov7.so
@@ -175,18 +163,14 @@ vendor/lib/libHalSuperSensorServer.so
 vendor/lib/libmibokeh_845.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmorpho_video_refiner.so
 vendor/lib/libmpbase.so
 vendor/lib/libnanopb.so
-vendor/lib/libremosaic_daemon.so
-vendor/lib/libremosaiclib.so
 vendor/lib/libSNPE.so
 vendor/lib/libSuperSensor.so
 vendor/lib/libSuperSensorCPU.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
-vendor/lib/libtonemapalgo.so
 vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/lib_denoiser3.so
@@ -197,10 +181,10 @@ vendor/firmware/bu64748gwz.prog
 vendor/firmware/CAMERA_ICP.elf
 
 # Camera OIS firmware
-vendor/firmware/dipper_ois.coeff
-vendor/firmware/dipper_ois_liteon.coeff
-vendor/firmware/dipper_ois_liteon.prog
-vendor/firmware/dipper_ois.prog
+vendor/firmware/perseus_ois.coeff
+vendor/firmware/perseus_ois_liteon.coeff
+vendor/firmware/perseus_ois_liteon.prog
+vendor/firmware/perseus_ois.prog
 
 # Display configs
 vendor/etc/sdr_config.cfg
@@ -211,9 +195,8 @@ vendor/lib64/hw/fingerprint.fpc.so
 vendor/lib64/hw/fingerprint.goodix.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
 
 # GNSS
 vendor/bin/ignss_1_1
@@ -234,36 +217,30 @@ vendor/lib64/libdiagjni.so
 vendor/lib64/libevent_observer.so
 vendor/lib64/libgarden.so
 vendor/lib64/libgps.utils.so
-vendor/lib/liblocation_api.so
-vendor/lib/libloc_core.so
-vendor/lib/libdiag_jni.so
-vendor/lib/libdiagjni.so
-vendor/lib/libevent_observer.so
-vendor/lib/libgarden.so
-vendor/lib/libgps.utils.so
 
 # Hotword enrollment
 -priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
+vendor/lib64/libkeymaster4.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
+vendor/lib64/libkeymaster4.so
+
 
 # NFC firmware
 vendor/firmware/libpn553_rec.so
 vendor/lib/libpn553_fw.so
 
 # QDCM calibration data
-vendor/etc/qdcm_calib_data_ss_notch_fhd_cmd_dsi_panel.xml
+vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
 
 # Secure element
 vendor/bin/hw/vendor.qti.secure_element@1.0-service
@@ -276,15 +253,16 @@ vendor/lib64/sensors.ssc.so
 vendor/lib/sensors.ssc.so
 
 # Sensors configs
+vendor/etc/sensors/config/adux1050_0.json
+vendor/etc/sensors/config/adux1050_1.json
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/sdm845_bmp285_0.json
 vendor/etc/sensors/config/sns_bring_to_ear.json
 vendor/etc/sensors/config/sns_aod.json
 vendor/etc/sensors/config/config_list.txt
-vendor/etc/sensors/config/adux1050_0.json
 vendor/etc/sensors/config/bmp285_0.json
 vendor/etc/sensors/config/sns_distance_bound.json
-vendor/etc/sensors/config/sdm845_tmd2725.json
+vendor/etc/sensors/config/sdm845_tsl2584.json
 vendor/etc/sensors/config/sns_facing.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_nonui.json
@@ -299,7 +277,7 @@ vendor/etc/sensors/config/sdm845_power_0.json
 vendor/etc/sensors/config/icm206xx_0.json
 vendor/etc/sensors/config/sns_pedometer.json
 vendor/etc/sensors/config/sns_fmv.json
-vendor/etc/sensors/config/tmd2725.json
+vendor/etc/sensors/config/tsl2584.json
 vendor/etc/sensors/config/sns_geomag_rv.json
 vendor/etc/sensors/config/sdm845_icm206xx_0.json
 vendor/etc/sensors/config/sdm845_ak991x_0.json
@@ -309,12 +287,6 @@ vendor/etc/sensors/config/sdm845_adux1050_0.json
 vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_gyro_cal.json
 vendor/etc/sensors/hals.conf
-
-# Snapdragon Computer Vision Engine
-vendor/lib64/libscveFaceLandmarks.so
-vendor/lib64/libscveFaceRecognition.so
-vendor/lib/libscveFaceLandmarks.so
-vendor/lib/libscveFaceRecognition.so
 
 # Thermal configs
 vendor/etc/thermal-engine-sdm845-arvr.conf
