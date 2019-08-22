@@ -13,9 +13,9 @@
  },
  {
     "remote":      "github",
-    "repository":  "XENT-Project/android_kernel_xiaomi_perseus",
+    "repository":  "Demon000/kernel_xiaomi_sdm845",
     "target_path": "kernel/xiaomi/perseus",
-    "branch":      "xent-msm4.9"
+    "branch":      "lineage-16.0"
   },
   {
     "repository": "android_device_xiaomi_sdm845-common",
