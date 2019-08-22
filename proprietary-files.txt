@@ -168,7 +168,6 @@ vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libc++_shared.so
 vendor/lib/libFaceGrade.so
 vendor/lib/libHalSuperSensorServer.so
-vendor/lib/libmibokeh_845.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmpbase.so
@@ -257,7 +256,6 @@ vendor/lib/libpn553_fw.so
 
 # QDCM calibration data
 vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
-vendor/etc/qdcm_calib_data_visionox_r66455_fhd_cmd_dsi_panel.xml
 
 # Secure element
 vendor/bin/hw/vendor.qti.secure_element@1.0-service
@@ -329,4 +327,3 @@ vendor/etc/thermal-engine.conf
 
 # WiFi
 vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-vendor/lib/vendor.qti.hardware.wifi.keystore@1.0.so
