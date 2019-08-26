@@ -54,6 +54,7 @@ vendor/etc/camera/score_bg.png
 vendor/etc/camera/score_icon.png
 vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/watermark_font_2300_3199.dat
+vendor/etc/public.libraries.txt
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_dualcam_refocus_front.so
 vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
@@ -73,6 +74,9 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libSuperSensor.so
 vendor/lib64/libSuperSensorCPU.so
+vendor/lib64/libmialgoengine.so
+vendor/lib64/libmisegment_front_845.so
+vendor/lib64/libVDClearShot.so
 vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so
 vendor/lib/camera/components/com.arcsoft.node.capturefusion.so
 vendor/lib/camera/components/com.arcsoft.node.frontcapturebokeh.so
@@ -110,6 +114,7 @@ vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.vidhance.node.eis.so
+vendor/lib/camera/components/com.qti.node.clearshot.so
 vendor/lib/camera/components/com.xiaomi.node.mifragment.so
 vendor/lib/camera/components/com.xiaomi.node.misegment.so
 vendor/lib/camera/components/etc/GpuKernelRepo.pb
@@ -183,6 +188,10 @@ vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/lib_denoiser3.so
 vendor/lib/mibokeh_845_opencl.bin
+vendor/lib/libmegface.so
+vendor/lib/libMegviiFacepp-0.5.2.so
+vendor/lib/libmisegment_front_845.so
+vendor/lib/libVDClearShot.so
 
 # Camera firmware
 vendor/firmware/bu64748gwz.prog
@@ -264,8 +273,17 @@ vendor/lib64/hw/android.hardware.secure_element@1.0-impl.so
 vendor/lib/hw/android.hardware.secure_element@1.0-impl.so
 
 # Sensors
+vendor/lib64/libultrasound.so
 vendor/lib64/sensors.ssc.so
 vendor/lib/sensors.ssc.so
+vendor/lib64/sensors.elliptic.so
+vendor/lib64/sensors.halls.so
+vendor/lib64/sensors.touch.so
+vendor/lib/sensors.halls.so
+vendor/lib/libultrasound.so
+vendor/lib/sensors.touch.so
+vendor/lib64/libnotifyaudiohal.so
+
 
 # Sensors configs
 vendor/etc/sensors/config/adux1050_0.json
@@ -308,6 +326,7 @@ vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/tsl2584.json
+vendor/etc/elliptic_sensor.xml
 vendor/etc/sensors/hals.conf
 
 # Thermal configs
