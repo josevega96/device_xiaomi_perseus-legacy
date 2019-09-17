@@ -14,10 +14,10 @@ fi
 set -e
 
 # Required!
-export DEVICE=dipper
+export DEVICE=perseus
 export DEVICE_COMMON=sdm845-common
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2018
+export DEVICE_BRINGUP_YEAR=2019
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
