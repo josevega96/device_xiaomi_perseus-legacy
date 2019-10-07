@@ -25,6 +25,9 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/perseus
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# NFC
+TARGET_USES_NQ_NFC := true
+
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
@@ -40,10 +43,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
-
-# SELinux
-BOARD_SEPOLICY_DIRS += \
-    $(DEVICE_PATH)/sepolicy/vendor
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/perseus/BoardConfigVendor.mk
