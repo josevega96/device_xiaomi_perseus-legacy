@@ -104,6 +104,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/pn5xx
 
-# Wallpapers
-PRODUCT_PACKAGES += \
-    WallpapersBReel2018
