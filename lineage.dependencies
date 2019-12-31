@@ -1,9 +1,9 @@
 [
  {
     "remote":      "github",
-    "repository":  "Demon000/kernel_xiaomi_sdm845",
+    "repository":  "kernel_xiaomi_sdm845",
     "target_path": "kernel/xiaomi/perseus",
-    "branch":      "lineage-16.0"
+    "branch":      "lineage-17.0"
   },
   {
     "repository": "android_device_xiaomi_sdm845-common",
