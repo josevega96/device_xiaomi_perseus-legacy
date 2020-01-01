@@ -1,0 +1,24 @@
+[
+ {
+    "remote":      "github",
+    "repository":  "LineageOS/kernel_xiaomi_sdm845",
+    "target_path": "kernel/xiaomi/perseus",
+    "branch":      "lineage-17.0"
+  },
+  {
+    "repository": "android_device_xiaomi_sdm845-common",
+    "target_path": "device/xiaomi/sdm845-common",
+    "branch":  	   "croquette-release"
+  },
+  {
+    "repository": "vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch":      "croquette-release"
+  },
+  {
+    "remote":      "github",
+    "repository":  "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/drvicesettings",
+    "branch":      "lineage-17.0"
+  }
+]
