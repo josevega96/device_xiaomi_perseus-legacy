@@ -32,6 +32,7 @@ VIDHANCE_EIS="$BLOB_ROOT"/vendor/lib/camera/components/com.vidhance.node.eis.so
 patchelf --add-needed com.vidhance.node.eis.shim.so "$VIDHANCE_EIS"
 
 #Add libdng_sdk to com.qti.node.debug
-patchelf --add-needed libdng_sdk.so "º$BLOB_ROOT"/vendor/lib/camera/components/com.qti.node.dbug
 
+NODE_DEBUG="$BLOB_ROOT"/vendor/lib/camera/components/com.qti.node.debug.so
+patchelf --add-needed com.vidhance.node.eis.shim.so "$NODE_DEBUG"
 
