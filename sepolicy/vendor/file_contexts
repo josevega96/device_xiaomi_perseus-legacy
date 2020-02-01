@@ -1,0 +1,2 @@
+ # Files in rootfs
+ /avb(/.*)?               u:object_r:avb_file:s0
