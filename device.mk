@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     com.vidhance.node.eis.shim \
-    libdng_sdk
+    libdng_sdk.vendor
 
 # Device fstab
 PRODUCT_PACKAGES += \
