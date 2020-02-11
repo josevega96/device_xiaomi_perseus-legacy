@@ -31,8 +31,8 @@ BLOB_ROOT="$ROM_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 VIDHANCE_EIS="$BLOB_ROOT"/vendor/lib/camera/components/com.vidhance.node.eis.so
 patchelf --add-needed com.vidhance.node.eis.shim.so "$VIDHANCE_EIS"
 
-#Add libdng_sdk to com.qti.node.debug
+#patch glgps
+GLGPS_BLOB="$BLOB_ROOT"/vendor/bin/glgps
+sed -i "s/SSLv3_client_method/SSLv23_method\x00\x00\x00\x00\x00\x00/" "$GLGPS_BLOB"
 
-NODE_DEBUG="$BLOB_ROOT"/vendor/lib/camera/components/com.qti.node.debug.so
-patchelf --add-needed com.vidhance.node.eis.shim.so "$NODE_DEBUG"
 
