@@ -15,6 +15,7 @@
 # limitations under the License.
 
 import re
+import common
 
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)

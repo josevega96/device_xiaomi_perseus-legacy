@@ -80,7 +80,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.safx.pbe.enabled=false \
     vendor.audio.tunnel.encode=false \
     vendor.audio.use.sw.alac.decoder=true \
-    vendor.audio.use.sw.ape.decoder=true
+    vendor.audio.use.sw.ape.decoder=true \
+    ro.vendor.audio.soundfx.type=mi
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -98,7 +99,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_zsl_mode=true \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
+    persist.camera.sat.fallback.dist=45 \
+    persist.camera.sat.fallback.dist.d=5 \
+    persist.camera.sat.fallback.luxindex=405 \
+    persist.camera.sat.fallback.lux.d=20
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -114,6 +119,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
 
+# Display density
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=440
+
 # Display post-processing
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=0 \
@@ -121,11 +130,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
     ro.vendor.display.cabl=2 \
-    ro.vendor.display.sensortype=2
+    ro.vendor.display.sensortype=2 \
+    vendor.display.enable_default_color_mode=0
+
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
+
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fp.fpc=true \
+    ro.hardware.fp.goodix=true
+
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -156,6 +173,16 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
+# GNSS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.flp=brcm \
+    ro.hardware.gps=brcm
+
+
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=nqx.default \
+    ro.se.type=HCE,UICC
 # Listen
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.soundtrigger=sva \
