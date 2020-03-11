@@ -49,9 +49,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    com.vidhance.node.eis.shim \
-    libdng_sdk.vendor
-
+    com.vidhance.node.eis.shim
 # Device fstab
 PRODUCT_PACKAGES += \
     fstab.qcom

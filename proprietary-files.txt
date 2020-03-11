@@ -171,6 +171,7 @@ vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libc++_shared.so
+vendor/lib/libdng_sdk.so
 vendor/lib/libFaceGrade.so
 vendor/lib/libHalSuperSensorServer.so
 vendor/lib/libmmcamera_faceproc2.so
